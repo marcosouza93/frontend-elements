@@ -1,0 +1,183 @@
+<html>
+<head>
+	<title>Testes</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		label {
+			-webkit-tap-highlight-color: transparent;
+	    	padding: 0;
+	    	outline: 0;
+	    	font-size: 100%;
+	    	vertical-align: baseline;
+	    	background: transparent;
+		}
+		input {
+			margin: 0;
+   			padding: 0;
+   			-webkit-rtl-ordering: logical;
+    		user-select: text;
+    		cursor: auto;
+
+		    text-rendering: auto;
+		    color: initial;
+		    letter-spacing: normal;
+		    word-spacing: normal;
+		    text-transform: none;
+		    text-indent: 0px;
+		    text-shadow: none;
+		    display: inline-block;
+		    text-align: start;
+		    font: 13.3333px Arial;
+		    -webkit-writing-mode: horizontal-tb;
+		}
+		body, body div {
+			margin: 0;
+		    padding: 0;
+		    border: 0;
+		    outline: 0;
+		    font-size: 100%;
+		    vertical-align: baseline;
+		}
+		img {
+			margin: 0;
+    		padding: 0;
+    		border: 0;
+    		outline: 0;
+    		font-size: 100%;
+    		vertical-align: baseline;
+    		background: transparent;
+		}
+		h5 {
+			margin: 0;
+		    padding: 0;
+		    border: 0;
+		    outline: 0;
+		    vertical-align: baseline;
+		    background: transparent;
+	        display: block;
+		    -webkit-margin-before: 1.67em;
+		    -webkit-margin-after: 1.67em;
+		    -webkit-margin-start: 0px;
+		    -webkit-margin-end: 0px;
+		}
+		i {
+			margin: 0;
+		    padding: 0;
+		    outline: 0;
+		    font-size: 100%;
+		    vertical-align: baseline;
+		}
+		label.input-radio{
+		    width: 200px;
+		    /*height: 105px;*/
+		    overflow: hidden;
+		    display: inline-block;
+		    border: 1px #DADADA solid;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    position: relative;
+		    /*-webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;*/
+		    user-select: none;
+		    /*-webkit-transition: border-color .1s;
+		    -moz-transition: border-color .1s;
+		    -o-transition: border-color .1s;*/
+		    transition: border-color 0.1s;
+		    margin: 10px;
+		}
+		label.input-radio:focus, label.input-radio:hover {
+			border-color: #B7B7B7;
+		}
+		label.input-radio.with-icn{
+			height: 210px;
+		}
+		label.input-radio .iconic-option-inner {
+			display: flex;
+		    flex-flow: column;
+		    align-items: center;
+		    justify-content: space-around;
+		}
+		label.input-radio .iconic-option-inner h5 {
+			font-size: 16px;
+		    color: #4A4A4A;
+		    font-weight: 700;
+		    padding-bottom: 15px;
+		    text-transform: uppercase;
+		}
+		label.input-radio img {
+			max-width: 80px;
+    		margin-top: 5px;
+		}
+		label.input-radio .iconic-option-inner i {
+			display: inline-block;
+		    width: 30px;
+		    height: 30px;
+		    border: 15px #fff solid;
+		    /*background: transparent;*/
+		    box-shadow: 0 0 0 1px #DADADA;
+		    border-radius: 50%;
+		    -webkit-transition: border-width .1s,box-shadow .1s;
+		    -moz-transition: border-width .1s,box-shadow .1s;
+		    -o-transition: border-width .1s,box-shadow .1s;
+		    transition: border-width 0.1s,box-shadow 0.1s;
+		}
+		label.input-radio input[type='radio'] {
+			position: absolute;
+		    opacity: 0;
+		    top: -20px;
+		    left: -20px;
+		    vertical-align: text-bottom;
+		    -webkit-font-smoothing: antialiased;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-appearance: radio;
+			background-color: initial;
+			border: initial;
+		}
+		label.input-radio input[type='radio']:checked+ {
+			background: #F7F7F7;
+		}
+		label.input-radio input[type='radio']:checked+ .option-wrapper {
+			background: #F7F7F7;
+		}
+		label.input-radio input[type='radio']:checked+ .option-wrapper .iconic-option-inner {
+			background: #F7F7F7;
+		}
+		label.input-radio input[type="radio"]:checked+ .option-wrapper i {
+		    border-width: 5px;
+    		background: #FF0083;
+		}
+		.option-wrapper {
+			display: flex;
+		    flex-flow: column;
+		    align-items: center;
+		    justify-content: space-around;
+		    height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<label class="input-radio with-icn">
+		<input type="radio" tabindex="1" name="ownership" value="renter">
+		<div class="option-wrapper">
+			<img src="img/rent.png" />
+			<div class="iconic-option-inner">
+				<h5>Rent</h5>
+				<i></i>
+			</div>
+		</div>
+	</label>
+	<label class="input-radio with-icn">
+		<input type="radio" tabindex="2" name="ownership" value="owner">
+		<div class="option-wrapper">
+			<img src="img/rent.png">
+			<div class="iconic-option-inner">
+				<h5>Own</h5>
+				<i></i>
+			</div>
+		</div>
+	</label>
+</body>
+</html>
