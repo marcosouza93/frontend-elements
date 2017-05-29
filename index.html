@@ -74,7 +74,6 @@
 		}
 		label.input-radio{
 		    width: 200px;
-		    /*height: 105px;*/
 		    overflow: hidden;
 		    display: inline-block;
 		    border: 1px #DADADA solid;
@@ -155,7 +154,6 @@
 		
 		label.input-checkbox{
 		    width: 200px;
-		    /*height: 105px;*/
 		    overflow: hidden;
 		    display: inline-block;
 		    border: 1px #DADADA solid;
@@ -279,14 +277,13 @@
 		    height: 100%;
 		}
 		
-		#react-app-container .question-inner.inputs-flat form .input-radio {
+		label.input-radio {
 			margin: 0 0 10px 0;
 			width: 330px;
 			height: 60px;
 		}
-		#react-app-container .step-container label.input-radio {
+		label.input-radio {
 			width: 200px;
-			height: 105px;
 			overflow: hidden;
 			display: inline-block;
 			border: 1px #DADADA solid;
@@ -302,21 +299,50 @@
 			-o-transition: border-color .1s;
 			transition: border-color 0.1s;
 		}
-		#react-app-container .step-container label.input-radio input[type="radio"] {
+		label.input-radio input[type="radio"] {
 			position: absolute;
 			opacity: 0;
 			top: -20px;
 			left: -20px;
 		}
-		#react-app-container .step-container label.input-radio input[type="radio"]:checked+.option-inner {
+		label.input-radio input[type="radio"]:checked+.option-inner {
 			background: #F7F7F7;
 		}
-		#react-app-container .question-inner.inputs-flat form .input-radio .option-inner {
+		label.input-radio .option-inner {
 			padding: 15px 15px 15px 10px;
 			display: flex;
 			flex-direction: row-reverse;
 			align-items: center;
 			justify-content: flex-end;
+		}
+		label.input-radio .option-inner h5 {
+			text-align: left;
+			padding: 0 15px 0 10px;
+		}
+		label.input-radio .option-inner h5 {
+			font-size: 16px;
+			color: #4A4A4A;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		label.input-radio input[type="radio"]:checked+.option-inner i {
+			border-width: 5px;
+			background: #FF0083;
+		}
+		label.input-radio .option-inner i {
+			flex-shrink: 0;
+		}
+		label.input-radio .option-inner i {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border: 15px #fff solid;
+			box-shadow: 0 0 0 1px #DADADA;
+			border-radius: 50%;
+			-webkit-transition: border-width .1s,box-shadow .1s;
+			-moz-transition: border-width .1s,box-shadow .1s;
+			-o-transition: border-width .1s,box-shadow .1s;
+			transition: border-width 0.1s,box-shadow 0.1s;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
