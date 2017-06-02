@@ -546,7 +546,11 @@
 			-webkit-appearance:none;
 		}
 		
-		input[type="email"]:focus {
+		input[type="email"]:hover {
+			border-color: #B7B7B7;
+		}
+		
+		input[type="email"].is-empty:focus {
 			border-color: #FF0083;
 			-webkit-box-shadow: 0 0 0 1px #FF0083 inset;
 			-moz-box-shadow: 0 0 0 1px #FF0083 inset;
@@ -600,6 +604,7 @@
 			text-align: center;
 			margin: 0;
 			transition: box-shadow 0.2s;
+			outline:0px !important;
 			-webkit-appearance:none;
 		}
 		
@@ -612,13 +617,6 @@
 			width: 60px;
 			border-right: 0;
 			border-radius: 0 5px 5px 0;
-		}
-		
-		.input-wrap.birthday input[type="number"]:focus {
-			border-color: #DADADA;
-			-webkit-box-shadow: 0 0 0 1px #FF0083 inset;
-			-moz-box-shadow: 0 0 0 1px #FF0083 inset;
-			box-shadow: 0 0 0 1px #FF0083 inset;
 		}
 		
 		input[type="number"].is-empty:focus {
@@ -725,15 +723,17 @@
 	<h1>E-mail input:</h1>
 	<hr/>
 	<label class="input-wrap email">
-		<input type="email" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="1" name="user_email" class=" is-empty" placeholder="Your email address...">
+		<input type="email" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="1" name="user_email" class="is-empty" placeholder="Your email address...">
 	</label>
 	
 	<h1>Date input:</h1>
 	<hr/>
 	<div class="input-wrap birthday">
-		<input type="number" min="1" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="2" name="birth_month" placeholder="MM" value="" class=" is-empty">
-		<input type="number" min="1" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="3" name="birth_day" placeholder="DD" value="" class=" is-empty">
-		<input type="number" min="1" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="4" name="birth_year" placeholder="YYYY" value="" class=" is-empty">
+		<input type="number" min="1" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="2" name="birth_month" placeholder="MM" value="" class="is-empty">
+		<input type="number" min="1" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="3" name="birth_day" placeholder="DD" value="" class="is-empty">
+		<input type="number" min="1" autocomplete="off" autocorrect="off" spellcheck="off" tabindex="4" name="birth_year" placeholder="YYYY" value="" class="is-empty">
 	</div>
+	
+	<br><br><br>
 </body>
 </html>
